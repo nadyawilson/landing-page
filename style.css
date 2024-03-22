@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+section{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    padding:100px;
+    display:flex;
+    justify-content: space-between;
+    background: white;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+
+}
+.header ul{
+    position: relative;
+    display: flex;
+    
+    
+
+}
+
+header ul li{
+    display: inline-block;
+    color:#333;
+    font-weight:400;
+    padding-left: 4rem;
+    transform: translateX(27rem);
+
+
+}
+header ul li a{
+    color:#333;
+    transition: .5s;
+    
+}
+header ul li a:hover{
+    color: darkgreen;
+    
+}
+
+
+.content{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content p{
+    font-size: 16px;
+}
+.text-box{
+    position: relative;
+    max-width: 600px;
+
+}
+.text-box h2{
+color:#333;
+font-size: 4em;
+line-height: 5rem;
+font-weight: 500;
+
+}
+.text-box span{
+    color:darkgreen;
+    font-size:1.2em;
+    font-weight:900;
+}
+.text-box p{
+    color:#333;
+}
+.text-box button{
+    display:inline-block;
+    margin-top:20px;
+    padding:8px 20px;
+    background: darkgreen;
+    color: white;
+    border-radius:40px;
+    font-weight:500;
+    border: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: .5s;
+}
+.text-box button:hover{
+    background-color: white;
+    color:darkgreen;
+}
+.img-box img{
+    width:600px;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top:50px;
+}
+
+.img-box img{
+    max-width:340px;
+}
+.thumb{
+    position:absolute;
+    left:50%;
+    bottom:20px;
+    transform: translateX(-50%);
+    display:flex;
+}
+.thumb li{
+    display: inline-block;
+    margin:0 20px;
+    cursor: pointer;
+}
+.thumb li img:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+    transition: .3s;
+}
+.sci{
+    position: absolute;
+    top:50%;
+    right:30px;
+    transform:translateY(-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+     font-size: 3rem;
+}
+.sci li i{
+    display:inline-block;
+    margin:5px 0;
+ filter:invert(1);
+    transform:scale(0.6)
+}
+.circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: darkgreen;
+    clip-path: circle(640px at right 800px);
+ 
+    
+}

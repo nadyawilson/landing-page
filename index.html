@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+    <a href=""class="logo"><img src="logo.png" alt=""></a>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">What's New</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    </header>
+
+    <div class="content">
+        <div class="text-box">
+            <h2>it's not just Coffee <br>It's <span>Starbucks</span></h2>
+            <p>Experience the essence of indulgence with every sip at Starbucks
+             where passion for coffee meets unparalleled quality, inviting you on a journey of flavor and delight</p>
+          <button><a href=""></a>Learn More</button>
+        </div>
+        <div class="img-box">
+            <img src="77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" width="600" class="starbucks">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('77325-frappuccino-drink-chocolate-starbucks-matcha-white.png'); changeCircleColor('darkgreen')"alt=""></li>
+            <li><img src="thumb2.png" onclick="imgSlider('62115-tea-coffee-drink-starbucks-latte-free-download-image.png');changeCircleColor('pink')" alt=""></li>
+            <li><img src="thumb3.png" onclick="imgSlider('62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png');changeCircleColor('hotpink')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><i class="fa-brands fa-square-facebook"></i></li>
+            <li><i class="fa-brands fa-square-twitter"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+        </ul>
+</section>
+
+    <script>
+        function imgSlider(anything){
+document.querySelector('.starbucks').src = anything;
+}
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+}
+
+    </script>
+</body>
+</html>
